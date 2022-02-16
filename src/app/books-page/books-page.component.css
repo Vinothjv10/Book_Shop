@@ -1,0 +1,123 @@
+*{
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.rows {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .row-1 {
+    height: 100px;
+    margin: 10px;
+    /* margin-top: 10px; */
+
+  }
+  .row-2 {
+    height: 130px;
+    width: 300px;
+    margin: 10px;
+  }
+  .row-2-1 {
+    height: 50px;
+    width: 250px;
+  }
+  .row-2-2 {
+    /* margin-top: 10px; */
+    height: 50px;
+    width: 280px;
+  }
+  .row-3 {
+    height: 130px;
+    width: 300px;
+    margin: 10px;
+  }
+  .row-3-1 {
+    height: 50px;
+    width: 250px;
+  }
+  .row-3-2 {
+    /* margin-top: 10px; */
+    height: 50px;
+    width: 280px;
+  }
+  .row-4 {
+    height: 130px;
+    width: 300px;
+    margin: 10px;
+  }
+  .row-4-1 {
+    height: 50px;
+    width: 250px;
+  }
+  .row-4-2 {
+    /* margin-top: 10px; */
+    height: 50px;
+    width: 280px;
+  }
+  .row-5 {
+    height: 130px;
+    width: 300px;
+    margin: 10px;
+  }
+  .row-5-1 {
+    height: 50px;
+    width: 250px;
+  }
+  .row-5-2 {
+    /* margin-top: 10px; */
+    height: 50px;
+    width: 280px;
+  }
+  /* Search Inputs */
+  
+  #input {
+    width: 280px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  #font {
+    font-size: 23px;
+  
+  }
+  .choose{
+      width: 280px;
+      height: 50px;
+      border-radius: 30px;
+      font-size: 20px;
+      border-radius: 50px;
+      outline: none;
+  }
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+.card {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+    background-image: url(https://www.extramarks.com/static/media/orange-box.19845d84.svg);
+    background-size: 157%;
+    /* background-repeat: no-repeat; */
+    box-sizing: border-box;
+    border-radius: 30px 60px;
+    width: 300px;
+    height: 553px;
+     margin: 19px; 
+  }
+.img-cont{
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+}
+.btn:hover{
+  background: linear-gradient(to bottom,#f45e29,#964325);
+
+}

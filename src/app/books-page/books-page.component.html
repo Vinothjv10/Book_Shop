@@ -1,0 +1,86 @@
+<div class="rows">
+
+    <div class="row-1">
+        <div class="row-2-1">
+            <p id="font">Medium</p>
+        </div>
+        <div class="row-2-2">
+            <input id="input" type="text" class="form-control" [(ngModel)]="filteredString"
+                placeholder=" English or Hindi" />
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="row-2-1">
+            <p id="font"> Class</p>
+        </div>
+        <div class="row-2-2">
+            <input id="input" type="text" class="form-control" [(ngModel)]="countrystring" placeholder="  VI to XII" />
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="row-3-1">
+            <p id="font">Subject</p>
+        </div>
+        <div class="row-3-2">
+            <input id="input" type="text" class="form-control" [(ngModel)]="categoryString"
+                placeholder="  Science or Social">
+        </div>
+    </div>
+    <div class="row-4">
+        <div class="row-4-1">
+            <p id="font">Chapter</p>
+        </div>
+        <div class="row-4-2">
+            <input id="input" type="text" class="form-control" [(ngModel)]="locationString" placeholder="  All">
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="row">
+
+    <div class="card" id="card1"
+        *ngFor="let books of items | filter: filteredString: locationString: categoryString :countryString :countrystring ">
+
+        <div style=" text-align: center;">
+            <img src="{{books.img}}" class="img-cont" style="border-radius: 15px">
+        </div>
+        <table class="table table-borderless mt-3" style="color: aliceblue;">
+
+            <tbody>
+                <tr>
+                    <th>Medium</th>
+                    <td>:</td>
+                    <td>
+                        {{books.medium}}
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <td>:</td>
+                    <td>{{books.class}}</td>
+                </tr>
+                <tr>
+                    <th>Subject</th>
+                    <td>:</td>
+                    <td>{{books.subject}}
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Chapter</th>
+                    <td>:</td>
+                    <td>{{books.chapter}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div style="margin-left: 100px;">
+            <button type="button" (click)="pick()" class="btn btn-danger">Pick</button>
+        </div>
+    </div>
+
+</div>
